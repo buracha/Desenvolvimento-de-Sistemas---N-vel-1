@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viagens</title>
+    <!--Google fonts - Playfair Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!--Css do BootStrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <!--BootStrap Icons-->
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    
+    <!--Css do Projeto-->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!--Script do BootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!--Nav-bar-->
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary-color" id="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand primary-color">
+                <img src="img/logo.png" alt="Viagens">
+                <span>Viagens</span>
+            </a>
+
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbar-items"
+              aria-controls="navbar-items"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+            
+            <i class="bi bi-list"> </i>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar-items">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link active cor" aria-current="page">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Destino.html" class="nav-link primary-color">Destino</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Promoção.html" class="nav-link primary-color">Promoção</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="Contato.html" class="nav-link primary-color">Contato</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!--SLIDER-->
+    <div class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button
+                  class="active"
+                  type="button"
+                  data-bs-target="#slider"
+                  data-bs-slide-to="0"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                >
+
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-target="#slider"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                >
+
+                </button>
+
+                <button
+                  type="button"
+                  data-bs-target="#slider"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                >
+
+                </button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/A4 - 17.png" alt="Casa 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5 class="primary-color">Passagens para os Estados Unidos (EUA)</h5>
+                        <a href="Promoção.html" class="btn btn-dark">Ver Passagens</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/A4 - 18.png" alt="Casa 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5 class="primary-color">Passagens para Londres</h5>
+                        <a href="Promoção.html" class="btn btn-dark">Ver Passagens</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/A4 - 19.png" alt="Casa 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5 class="primary-color">Passagens para Dubai</h5>
+                        <a href="Promoção.html" class="btn btn-dark">Ver Passagens</a>
+                    </div>
+                </div>
+
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide="prev"
+            >
+            <i class="bi bi-chevron-compact-left"></i>
+            <span class="visually-hidden">Previons</span>
+            </button>
+
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#slider"
+              data-bs-slide="next"
+            >
+            <i class="bi bi-chevron-compact-right"></i>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- MINI BANNERS -->
+        <div class="col-12 col-md-10 offset-md-1" id="mini-banners">
+            <div class="row">
+                <div class="col-12 col-md-4 bg">
+                    <div class="card text-center bg-secondary-color">
+                        <i class="bi bi-airplane-engines primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Passagens Prontas</h5>
+                            <p class="card-text secondary-color">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="Contato.html" class="btn btn-dark">Saber Mais
+                            <j class="bi bi-bookmark-check"></j>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card text-center bg-secondary-color">
+                        <i class="bi bi-binoculars primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Escolha Seu Destino</h5>
+                            <p class="card-text secondary-color">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="Contato.html" class="btn btn-dark">Saber Mais
+                            <j class="bi bi-bookmark-check"></j>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card text-center bg-secondary-color">
+                        <i class="bi bi-globe-americas primary-color"></i>
+                        <div class="card-body">
+                            <h5 class="card-title primary-color">Roteiro De Viagens</h5>
+                            <p class="card-text secondary-color">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <a href="Contato.html" class="btn btn-dark">Saber mais
+                            <j class="bi bi-bookmark-check"></j>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- DESTAQUES -->
+    <div class="container" id="featured-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Viagens em Destaque</h2>
+            <p class="subtitle secondary-color">
+                Conheça as viagens que o publico mais gosta
+            </p>
+        </div>
+        <div class="col-12" id="featured-images">
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <img src="img/A4 - 13.png" alt="Projeto 01" class="img-fluid">
+                    <div class="banner-content">
+                        <div class="secondary-color">Internacional</div>
+                        <h3><a href="Destino.html" class="nav-link"> Disney</a></h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="img/A4 - 14.png" alt="Projeto 01" class="img-fluid">
+                    <div class="banner-content">
+                        <div class="secondary-color">Nacional</div>
+                        <h3><a href="Destino.html" class="nav-link"> Alter do Chão</a></h3>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <img src="img/A4 - 15.png" alt="Projeto 01" class="img-fluid">
+                    <div class="banner-content"> 
+                        <div class="secondary-color">Nacional</div>
+                        <h3><a href="Destino.html" class="nav-link">Jalapão Fervedouro</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- INFO -->
+    <div class="container" id="info-container">
+        <div class="col-12">
+            <h2 class="title primary-color">Detalhes Importantes</h2>
+            <p class="subtitle secondary-color">
+                Saiba mais sobre a experiência da nossa incrível equipe
+            </p>
+        </div>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-12 col-md-5" id="info-banner">
+                    <img src="img/A4 - 16.png" alt="Informações Da Empresa" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-7 bg-secondary-color" id="info-content">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="title primary-color">Estes dados fazem a diferença</h2>
+                            <p class="subtitle secondary-color">A excelência nos negócios começa com as pessoas. E a maneira mais fácil e mais eficaz para se conseguir isso é trabalhando com aqueles que já incorporam excelência em outras organizações - como o nosso pessoal. 
+
+                                Possuímos anos de experiência trabalhando com todos os tipos de empresas. Por isso, o nosso pessoal entende os desafios que a sua empresa pode estar enfrentando.</p>
+                        </div>
+                        <div class="col-12" id="info-numbers">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="primary-color">18</h3>
+                                    <p class="secondary-color">Anos de experiencia com viagens</p>
+                                </div>
+
+                                <div class="col">
+                                    <h3 class="primary-color">31.865</h3>
+                                    <p class="secondary-color">Viagens bem sucedidas</p>
+                                </div>
+
+                                <div class="col">
+                                    <h3 class="primary-color">10.956</h3>
+                                    <p class="secondary-color">Clientes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <a href="Contato.html" class="btn btn-dark">Saber Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="container-fluid text-bg-dark" id="footer">
+        <div class="container">
+            <div class="row">
+                <!-- FOOTER TOP -->
+                <div class="col-12" id="footer-top">
+                    <div class="row justify-content-between">
+                        <div class="col-4"><h2>Viagens</h2></div>
+                        <div class="col-4" id="social-icons">
+                            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+                            <a href="https://wa.me/5588988085024"><i class="bi bi-whatsapp"></i></a>
+                            <a href="https://instagram.com/jadson.dg244?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.youtube.com/"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER DETAILS -->
+                <div class="col-12" id="footer-details">
+                    <div class="row">
+                        <div class="col-12 col-md-4" id="news-comtainer">
+                            <h4>Fique por dentro das novidades</h4>
+                            <p class="secondary-color">Inscreva-se para saber em primeira mão</p>
+                            <form>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Digite seu e-mail">
+                                </div>
+                                <button class="btn btn-dark" type="submit">Inscrever</button>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-4" id="contact-container">
+                            <h4>Forma de contato</h4>
+                            <p class="secondary-color">(88)9 4002-8922</p>
+                            <p class="secondary-color">Viagens@gmail.com</p>
+                        </div>
+                        <div class="col-12 col-md-4" id="links-container">
+                            <div class="row">
+                                <h4>Você pode estar procurando por:</h4>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li><a href="" class="secondary-color">Central de Dúvidas</a></li>
+                                        <li><a href="" class="secondary-color">Serviços Adicionais</a></li>
+                                        <li><a href="" class="secondary-color">Cupom de Desconto</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FOOTER BOTTOM -->
+                <div class="col-12" id="footer-bottom">
+                    <div class="row justify-content-between">
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">Vaigens &copy; 2023</p>
+                        </div>
+
+                        <div class="col-12 col-md-3">
+                            <p class="secondary-color">
+                                Realizamos sua Viagem
+                                <i class="bi bi-heart"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
